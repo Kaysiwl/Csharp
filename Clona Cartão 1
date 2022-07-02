@@ -1,0 +1,64 @@
+using System;
+using System.Globalization;
+// OBS: Padrão internacional
+
+namespace EX_06
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string Nome;
+            Console.WriteLine("Digite seu nome completo:");
+            Nome = Console.ReadLine();
+            // OBS: ReadLine: Armazena/Lê a informação que foi inserida no console
+            Console.Clear();
+            // etapa 1: Digite seu nome no console
+
+            double CPF;
+            Console.WriteLine("Digite seu CPF:");
+            CPF = double.Parse(Console.ReadLine());
+            // OBS: ReadLine: Armazena/Lê a informação que foi inserida no console
+            Console.Clear();
+            // etapa 2: Digite seu CPF no console
+
+            double Cartão;
+            Console.WriteLine("Numero do cartão:");
+            Cartão = double.Parse(Console.ReadLine());
+            // OBS: ReadLine: Armazena/Lê a informação que foi inserida no console
+            Console.Clear();
+            // etapa 4: Digite o número do seu cartão no console
+
+
+            double Validade;
+            Console.WriteLine("Data de validade:");
+            Validade = double.Parse(Console.ReadLine());
+            // OBS: ReadLine: Armazena/Lê a informação que foi inserida no console
+            Console.Clear();
+            // etapa 5: Digite a validade do seu cartão no console
+
+            double CVV;
+            Console.WriteLine("CVV:");
+            CVV = double.Parse(Console.ReadLine());
+            // OBS: ReadLine: Armazena/Lê a informação que foi inserida no console
+            Console.Clear();
+            // etapa 6: Digite o CVV do seu cartão no console
+
+            Console.WriteLine("Confira seus dados:");
+            Console.WriteLine("Nome: " + Nome);
+            Console.WriteLine("CPF: " + CPF);
+            Console.WriteLine("Número do Cartão: " + Cartão);
+            Console.WriteLine("Data de validade: " + Cartão);
+            Console.WriteLine("CVV: " + CVV);
+            Console.ReadKey();
+            Console.Clear();
+            // etapa 7: Seus dados aparecerão todos nao console para serem confirmados
+
+            Console.WriteLine("Cadastro realizado! Aguarde o email!");
+            Console.ReadKey();
+            Console.Clear();
+
+        }
+    }
+}
