@@ -1,0 +1,30 @@
+using System;
+
+namespace EX_001
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 9;
+            int y;
+
+           Console.WriteLine("Adivinhe um número de 1 a 10");
+           y = int.Parse(Console.ReadLine());
+           Console.Clear();
+
+            if (x == y)
+                // OBS: If = Condição "se" 
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Parabéns! Você acertou!");
+            }
+            else
+                // OBS: If = Condição "senão" 
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Game Over, Tente Novamente!");
+            }
+        }
+    }
+}
